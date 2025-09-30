@@ -1,4 +1,4 @@
-#📚 Simple Library (Laravel + MySQL)
+# 📚 Simple Library (Laravel + MySQL)
 <p align="center"><img width="450" height="450" alt="Image" src="https://github.com/user-attachments/assets/52114988-8202-45f2-a3c9-bb9371bb80e4" /></p>
 
 ## 📖 Deskripsi
