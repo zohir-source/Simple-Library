@@ -1,5 +1,5 @@
 # Simple Library (Laravel + MySQL)
-![Image](https://github.com/user-attachments/assets/2810203e-00de-46a8-af88-053068bd409d)
+<img width="630" height="630" alt="Image" src="https://github.com/user-attachments/assets/52114988-8202-45f2-a3c9-bb9371bb80e4" />
 
 ## Deskripsi
 Proyek sederhana API untuk mengelola daftar buku menggunakan Laravel dan MySQL.  
@@ -130,9 +130,3 @@ Respons error validasi akan berbentuk JSON dengan status 422.
 
 
 ---
-
-
-
-
-
-Mau aku buatkan versi itu juga?
