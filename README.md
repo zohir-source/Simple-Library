@@ -84,7 +84,7 @@ Contoh Request / Testing API
 
 
 GET semua buku:
-![Thunder CLient Response](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/31ac1f75-e712-43f0-be3b-59b1083d2bed" />)
+![Thunder CLient Response]<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/31ac1f75-e712-43f0-be3b-59b1083d2bed" />
 
 Method = [GET] cth = http://127.0.0.1:8000/api/books
 
