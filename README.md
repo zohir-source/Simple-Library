@@ -78,6 +78,7 @@ DELETE	/api/books/{id}	Hapus buku
 
 ---
 ```
+# Cara menggunakan
 Contoh Request / Testing API
 
 > Catatan: Proyek ini diuji menggunakan Thunder Client (VS Code extension), tapi kamu juga bisa menggunakan Postman, Insomnia, curl, atau tools API lainnya.
