@@ -20,13 +20,9 @@ cd simple-library
 
 2. Install dependencies:
 
-
-
 composer install
 
 3. Copy .env dan sesuaikan koneksi database:
-
-
 
 cp .env.example .env
 
@@ -41,22 +37,15 @@ DB_PASSWORD=secret
 
 4. Generate app key:
 
-
-
 php artisan key:generate
 
 5. Buat database MySQL (contoh: simple_library_db)
 
-
 6. Jalankan migration & seed:
-
-
 
 php artisan migrate --seed
 
 7. Jalankan server development:
-
-
 
 php artisan serve
 
