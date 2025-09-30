@@ -84,24 +84,31 @@ Contoh Request / Testing API
 
 
 GET semua buku:
+![Thunder CLient Response](<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/31ac1f75-e712-43f0-be3b-59b1083d2bed" />)
 
-curl -X GET http://127.0.0.1:8000/api/books
+Method = [GET] cth = http://127.0.0.1:8000/api/books
 
 POST tambah buku:
 
-curl -X POST http://127.0.0.1:8000/api/books \
+POST http://127.0.0.1:8000/api/books \
 -H "Content-Type: application/json" \
 -d '{"title":"Judul Baru","author":"Nama Penulis","year":2020}'
 
+catatan : kalau tidak mau menambahkan lewat body boleh dengan cara langsung lewat URL API
+Method = [POST] cth = http://127.0.0.1:8000/api/books?title=Judul+Baru&author=Nama+Penulis&year=2020
+
 PUT update buku:
 
-curl -X PUT http://127.0.0.1:8000/api/books/1 \
+PUT http://127.0.0.1:8000/api/books/1 \
 -H "Content-Type: application/json" \
 -d '{"title":"Judul Diubah","year":2019}'
 
+catatan : kalau tidak mau memperbarui lewat body boleh dengan cara langsung lewat URL API
+Method = [PUT] cth = http://127.0.0.1:8000/api/books/1?title=Judul+Diubah&year=2019
+
 DELETE buku:
 
-curl -X DELETE http://127.0.0.1:8000/api/books/1
+Method = [DELETE] cth = http://127.0.0.1:8000/api/books/1
 
 
 ---
