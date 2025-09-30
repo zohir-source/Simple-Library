@@ -1,17 +1,18 @@
-# Simple Library (Laravel + MySQL)
+#📚 Simple Library (Laravel + MySQL)
 <p align="center"><img width="450" height="450" alt="Image" src="https://github.com/user-attachments/assets/52114988-8202-45f2-a3c9-bb9371bb80e4" /></p>
 
-## Deskripsi
+##📖 Deskripsi
 Proyek sederhana API untuk mengelola daftar buku menggunakan Laravel dan MySQL.  
 Mendukung operasi CRUD (Create, Read, Update, Delete) untuk buku.
 
-## Requirement
+## 🛠️ Requirement
 - PHP >= 8.1
 - Composer
 - MySQL
-- Laravel => 10.x 
+- Laravel => 10.x
+- Postman / Thunder Client (untuk uji API)
 
-## Instalasi
+## ⚙️ Instalasi
 1. Clone repository:
 ``` bash
 git clone https://github.com/username/simple-library.git
