@@ -12,7 +12,7 @@ Mendukung operasi CRUD (Create, Read, Update, Delete) untuk buku.
 
 ## Instalasi
 1. Clone repository:
-```bash
+``` bash
 git clone https://github.com/username/simple-library.git
 cd simple-library
 
@@ -76,7 +76,7 @@ DELETE	/api/books/{id}	Hapus buku
 
 
 ---
-
+```
 Contoh Request / Testing API
 
 > Catatan: Proyek ini diuji menggunakan Thunder Client (VS Code extension), tapi kamu juga bisa menggunakan Postman, Insomnia, curl, atau tools API lainnya.
