@@ -1,4 +1,5 @@
 # Simple Library (Laravel + MySQL)
+![Image](https://github.com/user-attachments/assets/2810203e-00de-46a8-af88-053068bd409d)
 
 ## Deskripsi
 Proyek sederhana API untuk mengelola daftar buku menggunakan Laravel dan MySQL.  
@@ -81,14 +82,15 @@ Contoh Request / Testing API
 
 > Catatan: Proyek ini diuji menggunakan Thunder Client (VS Code extension), tapi kamu juga bisa menggunakan Postman, Insomnia, curl, atau tools API lainnya.
 
-
+## Thunder CLient Response
 
 GET semua buku:
-![Thunder CLient Response]<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/31ac1f75-e712-43f0-be3b-59b1083d2bed" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/31ac1f75-e712-43f0-be3b-59b1083d2bed" />
 
 Method = [GET] cth = http://127.0.0.1:8000/api/books
 
 POST tambah buku:
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/ec4a8336-8a4b-4d54-9b55-2a0d4d46be02" />
 
 POST http://127.0.0.1:8000/api/books \
 -H "Content-Type: application/json" \
@@ -98,6 +100,7 @@ catatan : kalau tidak mau menambahkan lewat body boleh dengan cara langsung lewa
 Method = [POST] cth = http://127.0.0.1:8000/api/books?title=Judul+Baru&author=Nama+Penulis&year=2020
 
 PUT update buku:
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d5a4cbef-0e35-4a92-b6c3-aa091b172539" />
 
 PUT http://127.0.0.1:8000/api/books/1 \
 -H "Content-Type: application/json" \
@@ -107,6 +110,7 @@ catatan : kalau tidak mau memperbarui lewat body boleh dengan cara langsung lewa
 Method = [PUT] cth = http://127.0.0.1:8000/api/books/1?title=Judul+Diubah&year=2019
 
 DELETE buku:
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/08575109-df4d-48cd-a2e3-aadfe3b81759" />
 
 Method = [DELETE] cth = http://127.0.0.1:8000/api/books/1
 
