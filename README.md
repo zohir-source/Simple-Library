@@ -1,7 +1,7 @@
 #📚 Simple Library (Laravel + MySQL)
 <p align="center"><img width="450" height="450" alt="Image" src="https://github.com/user-attachments/assets/52114988-8202-45f2-a3c9-bb9371bb80e4" /></p>
 
-##📖 Deskripsi
+## 📖 Deskripsi
 Proyek sederhana API untuk mengelola daftar buku menggunakan Laravel dan MySQL.  
 Mendukung operasi CRUD (Create, Read, Update, Delete) untuk buku.
 
@@ -79,12 +79,12 @@ DELETE	/api/books/{id}	Hapus buku
 
 ---
 ```
-# Cara menggunakan
+# 🚀 Cara Menggunakan
 Contoh Request / Testing API
 
 > Catatan: Proyek ini diuji menggunakan Thunder Client (VS Code extension), tapi kamu juga bisa menggunakan Postman, Insomnia, curl, atau tools API lainnya.
 
-## Thunder CLient Response
+## 🌩️ Thunder Client Response
 
 GET semua buku:
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/31ac1f75-e712-43f0-be3b-59b1083d2bed" />
@@ -119,16 +119,12 @@ Method = [DELETE] cth = http://127.0.0.1:8000/api/books/1
 
 ---
 
-Validasi Input
+✅ Validasi Input
 
-title : wajib, maksimal 150 karakter
+title wajib diisi (maks. 150 karakter).
 
-author: wajib, maksimal 100 karakter
+author wajib diisi (maks. 100 karakter).
 
-year  : integer, opsional, tidak boleh lebih besar dari tahun sekarang
-
-
-Respons error validasi akan berbentuk JSON dengan status 422.
-
+year harus berupa angka dan tidak boleh melebihi tahun sekarang.
 
 ---
