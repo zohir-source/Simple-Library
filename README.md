@@ -1,61 +1,129 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Simple Library (Laravel + MySQL)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Deskripsi
+Proyek sederhana API untuk mengelola daftar buku menggunakan Laravel dan MySQL.  
+Mendukung operasi CRUD (Create, Read, Update, Delete) untuk buku.
 
-## About Laravel
+## Requirement
+- PHP >= 8.1
+- Composer
+- MySQL
+- Laravel 10.x
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Instalasi
+1. Clone repository:
+```bash
+git clone https://github.com/username/simple-library.git
+cd simple-library
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+2. Install dependencies:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+composer install
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+3. Copy .env dan sesuaikan koneksi database:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+cp .env.example .env
 
-### Premium Partners
+Contoh konfigurasi .env:
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=simple_library_db
+DB_USERNAME=root
+DB_PASSWORD=secret
 
-## Contributing
+4. Generate app key:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+php artisan key:generate
 
-## Security Vulnerabilities
+5. Buat database MySQL (contoh: simple_library_db)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+6. Jalankan migration & seed:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+php artisan migrate --seed
+
+7. Jalankan server development:
+
+
+
+php artisan serve
+
+API tersedia di: http://127.0.0.1:8000/api/books
+
+
+---
+
+Endpoints
+
+Method	URL	Keterangan
+
+GET	/api/books	List semua buku
+GET	/api/books/{id}	Detail buku berdasarkan ID
+POST	/api/books	Tambah buku baru
+PUT	/api/books/{id}	Update data buku
+DELETE	/api/books/{id}	Hapus buku
+
+
+
+---
+
+Contoh Request / Testing API
+
+> Catatan: Proyek ini diuji menggunakan Thunder Client (VS Code extension), tapi kamu juga bisa menggunakan Postman, Insomnia, curl, atau tools API lainnya.
+
+
+
+GET semua buku:
+
+curl -X GET http://127.0.0.1:8000/api/books
+
+POST tambah buku:
+
+curl -X POST http://127.0.0.1:8000/api/books \
+-H "Content-Type: application/json" \
+-d '{"title":"Judul Baru","author":"Nama Penulis","year":2020}'
+
+PUT update buku:
+
+curl -X PUT http://127.0.0.1:8000/api/books/1 \
+-H "Content-Type: application/json" \
+-d '{"title":"Judul Diubah","year":2019}'
+
+DELETE buku:
+
+curl -X DELETE http://127.0.0.1:8000/api/books/1
+
+
+---
+
+Validasi Input
+
+title : wajib, maksimal 150 karakter
+
+author: wajib, maksimal 100 karakter
+
+year  : integer, opsional, tidak boleh lebih besar dari tahun sekarang
+
+
+Respons error validasi akan berbentuk JSON dengan status 422.
+
+
+---
+
+License
+
+MIT
+
+Kalau mau, aku bisa tambahkan **contoh screenshot Thunder Client dengan response JSON** langsung di README supaya lebih jelas dan terlihat profesional di GitHub.  
+
+Mau aku buatkan versi itu juga?
