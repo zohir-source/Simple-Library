@@ -120,10 +120,8 @@ Respons error validasi akan berbentuk JSON dengan status 422.
 
 ---
 
-License
 
-MIT
 
-Kalau mau, aku bisa tambahkan **contoh screenshot Thunder Client dengan response JSON** langsung di README supaya lebih jelas dan terlihat profesional di GitHub.  
+
 
 Mau aku buatkan versi itu juga?
