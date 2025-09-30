@@ -9,7 +9,7 @@ Mendukung operasi CRUD (Create, Read, Update, Delete) untuk buku.
 - PHP >= 8.1
 - Composer
 - MySQL
-- Laravel 
+- Laravel => 10.x 
 
 ## Instalasi
 1. Clone repository:
