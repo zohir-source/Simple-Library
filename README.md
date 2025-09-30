@@ -1,5 +1,5 @@
 # Simple Library (Laravel + MySQL)
-<img width="630" height="630" alt="Image" src="https://github.com/user-attachments/assets/52114988-8202-45f2-a3c9-bb9371bb80e4" />
+<img width="630" height="300" alt="Image" src="https://github.com/user-attachments/assets/52114988-8202-45f2-a3c9-bb9371bb80e4" />
 
 ## Deskripsi
 Proyek sederhana API untuk mengelola daftar buku menggunakan Laravel dan MySQL.  
