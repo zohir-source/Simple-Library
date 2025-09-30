@@ -1,5 +1,5 @@
 # Simple Library (Laravel + MySQL)
-<p align="center"><img width="300" height="300" alt="Image" src="https://github.com/user-attachments/assets/52114988-8202-45f2-a3c9-bb9371bb80e4" /></p>
+<p align="center"><img width="450" height="450" alt="Image" src="https://github.com/user-attachments/assets/52114988-8202-45f2-a3c9-bb9371bb80e4" /></p>
 
 ## Deskripsi
 Proyek sederhana API untuk mengelola daftar buku menggunakan Laravel dan MySQL.  
@@ -9,7 +9,7 @@ Mendukung operasi CRUD (Create, Read, Update, Delete) untuk buku.
 - PHP >= 8.1
 - Composer
 - MySQL
-- Laravel 10.x
+- Laravel 
 
 ## Instalasi
 1. Clone repository:
